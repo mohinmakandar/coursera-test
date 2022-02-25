@@ -23,24 +23,25 @@
 
     /* When user hovers on the button and when user actually clicks on the link we want to perfom following operatinos Using
     hover and active pseudo classes*/
-    a:hover{
+    a:hover, a:active{
       background-color: black;
       color: white;
     }
 
-    header li:nth-chid(3) {
-      font-size:30px;
-    }
-
-    section div:nth-child(4) {
-
-      backgound-color:green;
-      color:black;
-    }
-    
     section div:nth-child(odd) {
       background-color:gray;
     }
+
+    header li:nth-child(3) {
+      font-size:20px;
+    }
+
+    section div:nth-child(4):hover {
+      background-color: blue;
+      color:black;
+      cursor: pointer;
+    }
+
 
     </style>
   </head>
