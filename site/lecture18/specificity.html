@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Specificity in CSS</title>
+  <style>
+      header.navigation p {
+        color:blue;            /*This css gets applied because its Specificity code is 0012 and hence it's greater than 0011 */
+      }
+                              /* Specificity score format [style,id,class,no of elements] */
+      p.blurb {
+        color:red;          /*This doesn't get applied because its Specificity score is 0011 */
+      }
+
+      p {
+        color:green !important;   /* It will override all the previous declarations for p tag because of the keyword important*/
+      }
+  </style>
+  </head>
+  <body>
+    <header class="navigation">
+      <p class="blurb"> Lorem ipsum dolor sit amet, consectetur<br>
+    adipisicing elit, sed do eiusmod tempor incididunt<br>
+   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   quis nostrud exercitation ullamco</p>
+  </header>
+  </body>
+</html>
