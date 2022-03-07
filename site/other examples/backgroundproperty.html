@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Background Property</title>
+    <style>
+      #bg{
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+        background-image: url("https://dummyimage.com/300.png/09f/fff"); /*sets background image which is by deaful repeated on x and y axis*/
+        background-repeat: no-repeat; /*helps you choose if you want to repeat the image on x and y or you don't want to repeat*/
+        background-position: top center; /*helps you position the background image */
+        background: url("https://dummyimage.com/300.png/09f/fff") top left red no-repeat; /*This method overrides the previous backgound declarations*/
+
+        /*
+        Note:
+          You can use the single background declaration and remove all previous declaration.
+        */
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="bg"></div>
+
+  </body>
+</html>
