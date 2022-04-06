@@ -21,14 +21,6 @@
     padding: 10px;
   }
 
-  #p1{
-    /* background-color: red;*/
-  }
-
-  #p2{
-    /* background-color: cyan; */
-  }
-
   section {
     clear:left;
   }
@@ -50,11 +42,13 @@
 
   nav ul li a{
     display:block;
+    font-size: 20px;
   }
 
   a:link, a:visited{
     text-decoration:none;
     padding: 8px;
+    color:black;
   }
 
   a:hover {
@@ -68,12 +62,22 @@
     margin-top: 8px;
   }
 
+  @media (min-width: 992px) and (max-width: 1199px) { /*For the mobile version*/
 
+    #p1{
+      width: 90%;
+    }
+
+    #p2
+    {
+      100px;
+    }
+  }
   </style>
   </head>
   <body>
 
-  <h1>Mohin Makandar's Blog</h1>
+  <h1>MohShub Blog</h1>
   <nav>
     <ul>
       <li><a href="https://google.com" target="_blank">Home</a></li>
@@ -85,9 +89,10 @@
   <div>
   <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<section>
-  This is a regular text used to just stretch the div.
-</section>
+
+  <section>
+    This is a regular text;
+  </section>
 </div>
   </body>
 </html>
